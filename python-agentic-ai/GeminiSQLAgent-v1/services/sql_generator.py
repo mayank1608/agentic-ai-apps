@@ -17,15 +17,17 @@ def generate_sql(question, schema):
     - Finance
     - Marketing
 
-    User may use abbreviations:
-    IT = Information Technology
-    HR = Human Resources
-
     Rules:
     1. SQL Server syntax only
     2. Return only SQL
     3. No markdown
     4. No explanation
+    
+    Rules:
+    - Consider common abbreviations.
+    - IT means Information Technology.
+    - HR means Human Resources.
+    - Use available sample values when filtering.
 
     Question:
     {question}

@@ -5,7 +5,7 @@ agent = SQLAgent()
 while True:
 
     question = input(
-        "\nAsk Question: "
+        "\nAsk Question or type 'exit' to quit: "
     )
 
     if question.lower() == "exit":

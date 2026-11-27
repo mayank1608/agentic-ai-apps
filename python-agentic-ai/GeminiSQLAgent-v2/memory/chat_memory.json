@@ -1,0 +1,6 @@
+[
+    {
+        "user": "give me list who works in IT dept with their names, dept id and salary",
+        "assistant": "Here is the list of employees currently working in the IT Department (Department ID: 3):\n\n| Employee Name | Department ID | Salary |\n| :--- | :---: | :--- |\n| **James Taylor** | 3 | $95,000.00 |\n| **William Wilson** | 3 | $90,000.00 |\n| **Sophia Moore** | 3 | $85,000.00 |\n\n**Summary:** \n* **Total IT Employees:** 3\n* **Department ID:** 3"
+    }
+]
