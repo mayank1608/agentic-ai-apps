@@ -2,5 +2,17 @@
     {
         "user": "give me list who works in IT dept with their names, dept id and salary",
         "assistant": "Here is the list of employees currently working in the IT Department (Department ID: 3):\n\n| Employee Name | Department ID | Salary |\n| :--- | :---: | :--- |\n| **James Taylor** | 3 | $95,000.00 |\n| **William Wilson** | 3 | $90,000.00 |\n| **Sophia Moore** | 3 | $85,000.00 |\n\n**Summary:** \n* **Total IT Employees:** 3\n* **Department ID:** 3"
+    },
+    {
+        "user": "what is todays date?",
+        "assistant": "Today's date is November 28, 2026."
+    },
+    {
+        "user": "What is today's wheather in Vadodara?",
+        "assistant": "Thank you for reaching out. Currently, weather information for Vadodara is not available in our database. We apologize for the inconvenience."
+    },
+    {
+        "user": "what is the temperature of vadodara today?",
+        "assistant": "We currently do not have the temperature data available for Vadodara today. Please check back later or consult a local weather forecasting service for real-time updates."
     }
 ]

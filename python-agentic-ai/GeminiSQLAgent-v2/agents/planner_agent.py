@@ -28,6 +28,16 @@ class PlannerAgent:
         4. excel_tool
         Use when user asks export,
         spreadsheet, excel.
+        
+        5. tavily_tool
+        Use when user asks Weather, 
+        News, Current events, Internet search, 
+        Latest information, non-database questions.
+        
+        6. chat_tool
+        Use when user asks general reasoning, 
+        programming, greetings, 
+        non-database questions.
 
         Return JSON:
 

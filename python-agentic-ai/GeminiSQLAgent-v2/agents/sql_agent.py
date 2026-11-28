@@ -11,6 +11,8 @@ from tools.registry import TOOLS
 
 from memory.memory_manager import MemoryManager
 
+from services.gemini_service import GeminiService as gemini
+
 
 class SQLAgent:
 
@@ -25,6 +27,10 @@ class SQLAgent:
         plan = self.planner.decide(question)
 
         print("\nPlan:", plan)
+        
+        if len(plan["tools"]) == 0:
+            answer = gemini.ask(question)
+            return answer
 
         schema = get_schema()
 
@@ -44,6 +50,24 @@ class SQLAgent:
         print("\nRows:")
 
         print(rows)
+        
+        if "chat_tool" in plan["tools"] or sql.upper() in [
+            "SELECT NULL;",
+            "SELECT NULL",
+            "NULL"
+        ]:
+                
+            return TOOLS["chat_tool"].execute(
+                question
+            )
+                    
+        if "tavily_tool" in plan["tools"]:
+
+            result = TOOLS[
+                "tavily_tool"
+            ].execute(question)
+
+            return result
 
         if "chart_tool" in plan["tools"]:
 

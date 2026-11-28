@@ -2,10 +2,14 @@ from tools.sql_tool import SQLTool
 from tools.schema_tool import SchemaTool
 from tools.chart_tool import ChartTool
 from tools.excel_tool import ExcelTool
+from tools.chat_tool import ChatTool
+from tools.tavily_tool import TavilyTool
 
 TOOLS = {
     "sql_tool": SQLTool(),
     "schema_tool": SchemaTool(),
     "chart_tool": ChartTool(),
-    "excel_tool": ExcelTool()
+    "excel_tool": ExcelTool(),
+    "chat_tool": ChatTool(),
+    "tavily_tool": TavilyTool()
 }

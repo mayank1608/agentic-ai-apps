@@ -7,3 +7,5 @@ pandas
 matplotlib
 streamlit
 openpyxl
+tavily-python
+watchfiles
