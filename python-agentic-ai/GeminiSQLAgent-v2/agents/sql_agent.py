@@ -27,10 +27,6 @@ class SQLAgent:
         plan = self.planner.decide(question)
 
         print("\nPlan:", plan)
-        
-        if len(plan["tools"]) == 0:
-            answer = gemini.ask(question)
-            return answer
 
         schema = get_schema()
 
